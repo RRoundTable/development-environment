@@ -18,12 +18,16 @@ syntax on
 set number
 highlight Normal ctermbg=None
 highlight LineNr ctermfg=DarkGrey
+
 " NerdTree
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
+nmap <leader>n :NERDTreeFocus<CR>
+nmap <C-n> :NERDTree<CR>
+nmap <C-t> :NERDTreeToggle<CR>
+nmap <C-f> :NERDTreeFind<CR>
 
 set clipboard+=unnamed  " use the clipboards of vim and win
 set paste               " Paste from a windows or from vim
