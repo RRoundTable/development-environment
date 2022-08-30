@@ -10,8 +10,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # GHCR
-export GITHUB_USERNAME=RRoundTable
-export CR_PAT=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
+export GITHUB_USERNAME=
+export CR_PAT=
 # Alias
 alias ll="ls -la"
 # If you come from bash you might have to change your $PATH.
