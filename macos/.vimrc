@@ -41,6 +41,10 @@ nmap <leader>d :YcmCompleter GoToDefinition<CR>
 
 "
 set backspace=indent,eol,start
+set smartindent
+set tabstop=4
+"set expandtab
+set shiftwidth=4
 
 " Remove All trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
